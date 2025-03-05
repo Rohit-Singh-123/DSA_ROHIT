@@ -28,7 +28,7 @@ char* convertInfixToPostfix(char* exp)
         if(isalnum(ch)){
             str[index++]=ch;
         }
-        else if(ch=='+' || ch=='-' || ch=='*' || ch=='/' || ch=='^' || ){
+        else if(ch=='+' || ch=='-' || ch=='*' || ch=='/' || ch=='^'){
             if(top==-1)
                 stack[++top]=ch;
             else{
